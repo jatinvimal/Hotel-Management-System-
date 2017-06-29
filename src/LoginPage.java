@@ -14,6 +14,7 @@ public class LoginPage extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(500,500);
         setResizable(false);
+        setTitle("LOGIN PAGE");
       //  setVisible(true);
 
         label1= new JLabel("USERNAME");
@@ -23,13 +24,13 @@ public class LoginPage extends JFrame {
         button1=new JButton("LOGIN");
 
 
-        label1.setBounds(50,120,150,20);
-        label2.setBounds(50,150,150,20);
+        label1.setBounds(100,120,150,20);
+        label2.setBounds(100,150,150,20);
 
-        textField1.setBounds(150,120,150,20);
-        textField2.setBounds(150,150,150,20);
+        textField1.setBounds(180,120,150,20);
+        textField2.setBounds(180,150,150,20);
 
-        button1.setBounds(180,250,100,20);
+        button1.setBounds(180,220,100,20);
         panel1= new JPanel();
         setContentPane(panel1);
         panel1.setBackground(Color.lightGray);
@@ -40,8 +41,6 @@ public class LoginPage extends JFrame {
         panel1.add(textField2);
         panel1.add(button1);
         setVisible(true);
-
-
     }
 
 }

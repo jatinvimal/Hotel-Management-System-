@@ -1,7 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 /**
  * Created by jatin kumar vimal on 27/06/2017.
@@ -88,13 +86,6 @@ public class SignUpPage extends JFrame {
 
         b1.setBounds(350, 550, 150, 25);
         b2.setBounds(530, 550, 150, 25);
-        b1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                ActionListenersClass alc=new ActionListenersClass();
-                alc.OnClickLogIn();
-            }
-        });
 
         p1 = new JPanel();
         setContentPane(p1);
