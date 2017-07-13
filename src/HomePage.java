@@ -25,7 +25,7 @@ public class HomePage extends JFrame {
         registrationButton.setBounds(180,240,150,25);
         panelHome= new JPanel();
         setContentPane(panelHome);
-        panelHome.setBackground(Color.CYAN);
+        panelHome.setBackground(Color.lightGray);
         panelHome.setLayout(null);
         panelHome.add(Homelabel);
         panelHome.add(loginbutton);
@@ -35,7 +35,11 @@ public class HomePage extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 ActionListenersClass alc=new ActionListenersClass();
-                alc.OnClickLogIn();
+                try {
+                    alc. OnClickLogIn();
+                } catch (Exception e1) {
+                    e1.printStackTrace();
+                }
             }
         });
 
@@ -50,7 +54,11 @@ public class HomePage extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 ActionListenersClass registrationButton= new ActionListenersClass();
-                registrationButton.OnClickRegButton();
+                try {
+                    registrationButton.OnClickRegButton();
+                } catch (Exception e1) {
+                    e1.printStackTrace();
+                }
             }
         });
 
